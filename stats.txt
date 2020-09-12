@@ -1,0 +1,9 @@
+Total commits checked: 16322
+Warnings generated: 25661
+Errors generated: 4768
+
+Most frequent warning: LEADING_SPACE
+Count: 4906
+
+Most frequent error: OPEN_BRACE
+Count: 1092
