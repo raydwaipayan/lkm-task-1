@@ -1,0 +1,14 @@
+99c99
+< COMMIT_LOG_LONG_LINE: 1059
+---
+> COMMIT_LOG_LONG_LINE: 1057
+126c126
+< GIT_COMMIT_ID: 270
+---
+> GIT_COMMIT_ID: 251
+142,143c142,143
+< Warnings generated: 25661
+< Errors generated: 4768
+---
+> Warnings generated: 25659
+> Errors generated: 4749

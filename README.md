@@ -16,5 +16,11 @@ Scripts and output files for task 1
   ```-> contains all commit hashes and author names for non merge commits between v5.7 and v5.8.```
 - checkpatch_out.txt
   ```-> contains checkpatch output data for all the commit hashes in commits.txt.```
+- checkpatch_out_patched.txt
+  ```-> checkpatch output after patching```
 - stats.txt
   ```-> contains statistical data generated using generate_stats.pl``` 
+- stats_patched.txt
+  ```-> statistical data after patching```
+- diff.txt
+  ``` difference before and after patching```

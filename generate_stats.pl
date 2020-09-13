@@ -56,32 +56,36 @@ while(<IF>){
 
 # store the max warnings, errors
 # and their respective frequencies
-my $c_mx_wrn=0;
-my $c_mx_err=0;
+my $c_mx_wrn=-1;
+my $c_mx_err=-1;
 my $mx_wrn;
 my $mx_err;
 
-# find most frequent warning
-foreach my $key (keys %warnings){
+# find warnings and most frequent warnings
+print OF "Warnings:\n\n";
+foreach my $key (sort { $b cmp $a }keys %warnings){
     my $val = $warnings{$key};
-    if($val > $c_mx_wrn)
+    print OF $key.": ".$val."\n";
+    if ($c_mx_wrn==-1)
     {
         $c_mx_wrn=$val;
         $mx_wrn=$key;
     }
 }
 
-# find most frequent error
-foreach my $key (keys %errors){
+# find errors and most frequent error
+print OF "\nErrors:\n\n";
+foreach my $key (sort { $b cmp $a }keys %errors){
     my $val = $errors{$key};
-    if($val > $c_mx_err)
+    print OF $key.": ".$val."\n";
+    if ($c_mx_err==-1)
     {
         $c_mx_err=$val;
         $mx_err=$key;
     }
 }
 
-print OF "Total commits checked: ".$c_commit."\n";
+print OF "\n\nTotal commits checked: ".$c_commit."\n";
 print OF "Warnings generated: ".$c_warning."\n";
 print OF "Errors generated: ".$c_error."\n\n";
 
