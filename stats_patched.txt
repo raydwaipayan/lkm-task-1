@@ -142,8 +142,8 @@ Total commits checked: 16322
 Warnings generated: 25659
 Errors generated: 4749
 
-Most frequent warning: YIELD
-Count: 1
+Most frequent warning: LEADING_SPACE
+Count: 4906
 
-Most frequent error: WHILE_AFTER_BRACE
-Count: 1
+Most frequent error: OPEN_BRACE
+Count: 1092

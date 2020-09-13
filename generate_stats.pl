@@ -66,7 +66,7 @@ print OF "Warnings:\n\n";
 foreach my $key (sort { $b cmp $a }keys %warnings){
     my $val = $warnings{$key};
     print OF $key.": ".$val."\n";
-    if ($c_mx_wrn==-1)
+    if ($val > $c_mx_wrn)
     {
         $c_mx_wrn=$val;
         $mx_wrn=$key;
@@ -78,7 +78,7 @@ print OF "\nErrors:\n\n";
 foreach my $key (sort { $b cmp $a }keys %errors){
     my $val = $errors{$key};
     print OF $key.": ".$val."\n";
-    if ($c_mx_err==-1)
+    if ($val > $c_mx_err)
     {
         $c_mx_err=$val;
         $mx_err=$key;
